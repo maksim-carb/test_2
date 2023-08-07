@@ -15,3 +15,9 @@ Economic_variables_DF = Economic_variables_DF.rename(columns={'Unnamed: 1':'Eco_
 
 ## adding a comment
 
+## A.2. VMT dataset
+VMT_DF = pd.read_excel('Historical VMT.xlsx')
+VMT_DF.columns.values[1] = 'VMT'   
+VMT_2020_2021 = VMT_DF['VMT'].to_numpy()
+row_VMT_DF = len(VMT_DF)
+VMT_DF = VMT_DF.drop(VMT_DF.index[row_VMT_DF-1])   # deleting the last row (i.e. row for the year 2021)
