@@ -21,3 +21,5 @@ VMT_DF.columns.values[1] = 'VMT'
 VMT_2020_2021 = VMT_DF['VMT'].to_numpy()
 row_VMT_DF = len(VMT_DF)
 VMT_DF = VMT_DF.drop(VMT_DF.index[row_VMT_DF-1])   # deleting the last row (i.e. row for the year 2021)
+
+### checking for push option again
