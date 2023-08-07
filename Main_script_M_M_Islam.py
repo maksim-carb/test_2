@@ -23,3 +23,8 @@ row_VMT_DF = len(VMT_DF)
 VMT_DF = VMT_DF.drop(VMT_DF.index[row_VMT_DF-1])   # deleting the last row (i.e. row for the year 2021)
 
 ### checking for push option again
+
+### A.3. Fuel Price dataset 
+### A.3.1. Data import
+Fuel_price_full_xlsx = pd.ExcelFile('Fuel price.xlsx')    
+Fuel_price_full_xlsx.sheet_names   
